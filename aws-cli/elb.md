@@ -1,4 +1,4 @@
-# ELB
+# ELB - Elastic Load Balancing -
 
 * ELB をリストアップ
 

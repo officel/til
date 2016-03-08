@@ -1,4 +1,4 @@
-# Autoscaling
+# Autoscaling - Auto Scaling -
 
 * 起動設定をリスト
 

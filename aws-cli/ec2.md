@@ -1,4 +1,4 @@
-# EC2
+# EC2 - Amazon Elastic Compute Cloud（Amazon EC2）-
 
 * EC2をリストアップ
 
