@@ -1,0 +1,6 @@
+@startuml
+
+/' デフォルトで全体をモノトーンにする '/
+skinparam monochrome true
+
+@enduml

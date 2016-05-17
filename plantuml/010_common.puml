@@ -1,0 +1,18 @@
+@startuml
+
+/' ヘッダをブロックにして改行することで title との間に隙間を作っている '/
+right header
+Project: <b>_PROJECT_NAME_</b>
+LastModified: <b>_LAST_MODIFIED_</b>
+
+endheader
+
+/' 1行で書くタイプの改行は \n で '/
+title <size:20> _PAGE_TITLE_\n
+
+/' フッタ '/
+right footer
+
+endfooter
+
+@enduml

@@ -1,0 +1,11 @@
+@startuml
+
+/' プロジェクト名 '/
+!define _PROJECT_NAME_ DIVA
+
+!define _PROJECT_CODE_ diva
+!define _SERVER_PREFIX_ diva
+
+
+
+@enduml

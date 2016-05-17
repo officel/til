@@ -1,0 +1,33 @@
+@startuml
+
+/' ページ固有設定 '/
+!define _PAGE_TITLE_ ファイル全体像
+!define _LAST_MODIFIED_ 2016-05-17
+
+/' 全体設定 '/
+!include 000_setting.puml
+
+/' 以下ページ '/
+
+database 100_sample_copy_base
+note right : this file
+
+database 000_setting
+note right : include all setting
+
+database 001_project_diva
+note bottom : Project specific
+
+database 010_common
+note bottom : header / footer / title / etc..
+
+database 090_skinparam
+note bottom : skin setting
+
+[100_sample_copy_base] <-- [000_setting]
+[000_setting] <-- [001_project_diva]
+[000_setting] <-- [010_common]
+[000_setting] <-- [090_skinparam]
+
+
+@enduml

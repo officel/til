@@ -1,0 +1,16 @@
+@startuml
+
+/' プロジェクトを選択する '/
+/' DIVA '/
+!include 001_project_diva.puml
+
+
+
+
+/' 共通設定 '/
+!include 010_common.puml
+
+/' スキン設定 '/
+!include 090_skinparam.puml
+
+@enduml
