@@ -46,6 +46,6 @@ function getWikiRandom()
 // main start
 echo '# ', date('Y/m/d'), PHP_EOL, PHP_EOL;
 
-echo '## 天気予報', PHP_EOL, getWeather(), PHP_EOL;
+echo '## 天気予報', PHP_EOL, PHP_EOL, getWeather(), PHP_EOL;
 
-echo '## 今日のWikiRandom', PHP_EOL, getWikiRandom(), PHP_EOL;
+echo '## 今日のWikiRandom', PHP_EOL, PHP_EOL, getWikiRandom(), PHP_EOL;
