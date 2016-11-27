@@ -5,7 +5,7 @@ right header
 Project: <b>_PROJECT_NAME_</b>
 LastModified: <b>_LAST_MODIFIED_</b>
 
-endheader
+end header
 
 /' 1行で書くタイプの改行は \n で '/
 title <size:20> _PAGE_TITLE_\n
@@ -13,6 +13,6 @@ title <size:20> _PAGE_TITLE_\n
 /' フッタ '/
 right footer
 
-endfooter
+end footer
 
 @enduml
