@@ -33,7 +33,8 @@ function getWikiRandom()
 
     $random = [];
     foreach ($result_array['query']['random'] as $list) {
-        $random[] = '* [' . $list['title'] . '](https://ja.wikipedia.org/wiki/' . urlencode($list['title']) . ')';
+        $url_str = str_replace(' ', '_', $list['title']);
+        $random[] = '* [' . $list['title'] . '](https://ja.wikipedia.org/wiki/' . urlencode($url_str) . ')';
     }
 
     $ret = implode(PHP_EOL, $random) . PHP_EOL;
