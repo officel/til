@@ -1,0 +1,17 @@
+/'
+IntelliJ の PlantUML Plugin の Salt wireframe のデフォルト
+この書き方だと１つしか書けないみたい。title入れるとエラーになってしまう
+'/
+@startuml
+salt
+{
+  Just plain text
+  [This is my button]
+  ()  Unchecked radio
+  (X) Checked radio
+  []  Unchecked box
+  [X] Checked box
+  "Enter text here   "
+  ^This is a drop list^
+}
+@enduml

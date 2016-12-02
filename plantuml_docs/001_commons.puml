@@ -1,0 +1,49 @@
+@startuml
+
+header : ヘッダ（改行しないとタイトルとの余白が少ない）
+
+footer
+  ヘッダもフッタもブロック化できる（コロンを書かない、end を書く）
+  <b><i>HTML要素も書ける</i></b>
+  記述位置によらずファイル上部と下部に表示される
+  left, center, right で左右位置
+end footer
+
+title : どのダイアグラムでも共通に使えるものメモ
+
+' 1行コメントはシングルクォーテーション
+
+( )
+note left : ノート\n（コメント）
+
+/'
+ブロックコメント
+を書くこともできる。
+'/
+
+
+' ↓改ページ
+newpage
+
+center header
+別のヘッダ
+改行した
+
+end header
+
+title
+↑のように header をブロックにして
+改行しておくとタイトルとの間に余白が作れる
+end title
+
+' ちなみに title ブロックで改行すると文字サイズで行が開く
+
+( )
+note right
+右にしてブロックにして
+改行できる
+end note
+
+right footer : 別のフッタ\n（単一行でも改行可）
+
+@enduml

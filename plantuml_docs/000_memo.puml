@@ -1,0 +1,42 @@
+/'
+とりあえずメモ
+'/
+@startuml
+
+/'
+矢印の向きを決める
+ユースケースの場合には矢印にコメントが書けない？
+ユースケースの場合は直前省略ができないみたい？
+'/
+上 -up-> 右
+右 -right-> 下
+下 -down-> 左
+左 -left-> 上
+
+newpage
+
+(上) -up-> (右)
+(右) -right-> (下)
+(下) -down-> (左)
+(左) -left-> (上)
+
+@enduml
+
+
+startuml と enduml の間に書いたものは無視される？
+（描画実装による？）
+
+下記のものは単独で start end 内にないとエラーになってしまう？
+
+@startuml
+version
+@enduml
+
+@startuml
+checkversion
+@enduml
+
+@startuml
+license
+@enduml
+
