@@ -1,0 +1,77 @@
+@startuml
+scale 600 width
+
+title : AWS で Web フロントまわりをシーケンスで表現してみた
+
+' hide footbox
+autonumber
+
+group DNS 名前解決
+  entity Route53
+  actor Client
+  Route53 <- Client: example.com?
+  Route53 -[#0000ff]> Client: xxx.xxx.xxx.xxx\n(CloudFront Alias)
+end
+
+
+== http[s] 共通 ==
+
+boundary CloudFront
+Client -> CloudFront: https://example.com\n(xxx.xxx.xxx.xxx)
+note right
+http -> https を強制できる
+end note
+
+CloudFront -->o ACM : SSL
+CloudFront -->o WAF : IDS
+
+WAF --> WAF : Allow/Block/Count
+note left
+IP addresses
+Request headers
+Strings in requests
+Length of requests
+SQL injection
+cross-site scripting(XSS)
+end note
+
+
+== キャッシュがある場合 ==
+
+CloudFront -> CloudFront : have cache\n and not expired
+
+CloudFront -[#0000FF]> Client : response
+note left
+速い！軽い！負荷軽減！
+end note
+
+
+== 静的コンテンツの場合 ==
+
+boundary S3
+CloudFront -> S3 : S3 Origin
+S3 -> CloudFront : DATA
+
+CloudFront -[#0000FF]> Client : response
+note left
+速い！軽い！負荷軽減！
+end note
+
+
+== 動的コンテンツの場合 ==
+boundary ELB
+
+CloudFront -> ELB : Dynamic Contents
+
+ELB -->o ACM : SSL
+note left
+CloudFront に設定したものと同じ証明書を使用する
+ACM は EC2 には直接適用されない
+ELB で SSL ターミネーションする
+end note
+
+ELB -> EC2 : http only!
+EC2 -> CloudFront : DATA
+CloudFront -[#0000FF]> Client : response
+
+@enduml
