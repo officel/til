@@ -1,16 +1,15 @@
-.. TIL documentation master file, created by
-   sphinx-quickstart on Wed Dec 21 01:49:04 2016.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
-   sphinx
+Office L TIL(Today I Learned)
+=============================
 
-Welcome to TIL's documentation!
-===============================
+Sphinx に再入門中。
+
+ソースコードは github 上の [officel/til: Today I learned](https://github.com/officel/til)
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
+   aws/index
 
 
 Indices and tables
