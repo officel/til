@@ -1,0 +1,34 @@
+2016/12
+=======
+
+One phrase
+----------
+
+締めくくりました
+
+Event
+-----
+
+* 年末年始向けメンテナンス完了
+
+
+memo
+----
+
+* スロークエリ通知ジョブ
+* [N] 縮退（web、DB,スレーブ切り）
+* [C] の全URIを入り口だけ作った
+* うるう秒対応全社指定なし。GooglePublicDNSを使うことにした
+* 新型メンテ検討失敗
+* gitlab 3 構築
+
+
+Focus
+-----
+
+* git(hub) の練習
+* CircleCI を手に入れた
+* Gitter を手に入れた
+* docker 練習
+* jupyter notebook
+* sphinx

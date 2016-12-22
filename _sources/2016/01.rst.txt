@@ -1,0 +1,48 @@
+2016/01
+=======
+
+One phrase
+----------
+
+Terraform VS Ansible on AWS
+
+
+Event
+-----
+
+- 年末年始を跨いでデプロイがなかったタイトルについて外部の認証期限切れが発生
+
+  - ２週間もデプロイしないとは思わなかったので
+
+- redis の bgsave で GvG 性能低下
+
+  - 時間変更で対応
+
+- [J] redis がフェイルオーバー。
+
+  - redis機の overcommit 設定を 1 にしていなかったのが理由
+  - マニュアルにも書いてあることが抜けていた
+
+- 娘に合わせて日商簿記３級を再受験（合格した）
+
+
+memo
+----
+
+- AWS準備に terraform を検討Ansible との棲み分け
+- [Z] の TCP timeout が多い件
+- 新規タイトル（[NEW]）の開発環境構築
+- 長期運用タイトル（[G]）のコスト削減開始＆NIC故障多発
+- [O]/[Z]の運用移管開始（Ｃ社）
+- ローカルVagrantのVMを作り直したせいでAnsibleがバージョンアップしてしまった
+- コンフルとJIRA採用の流れ
+
+
+Focus
+-----
+
+- AWS Lambda
+- AWS AmazonLinux での環境構築 PHP7, ImageMagic等々
+- AWS CloudFront
+- AWS CloudTrail
+- AWS IAM クロスアカウントアクセス

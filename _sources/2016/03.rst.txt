@@ -1,0 +1,34 @@
+2016/03
+=======
+
+One phrase
+----------
+
+新規構築開始
+
+
+Event
+-----
+
+- 確定申告
+- 既存タイトル（というかGMOアプリクラウド）にDDoS攻撃
+
+
+memo
+----
+
+- コスト削減対策のWebサーバ削減（[O]/[Z]）
+- terraform と terraforming は使いたいAWSサービスに対応しきっていなかった
+- ansible は対応にバグがある（そしてそれを踏みぬいた）
+- php memory_limit 関係（[G]に続き[O]/[Z]もメモリ不足）
+- [Q] 構築にあたりベンチマーク取得などを定型化
+- [D]-image が容量あふれ（分割対応）
+
+
+Focus
+-----
+
+- [C] 用 S3 でモックサーバ
+- AWS SDK for ruby のバージョン差異（２系への移行中）
+- AWS SecurityGroup RDSやECaのポート開放と接続
+

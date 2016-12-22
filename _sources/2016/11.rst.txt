@@ -1,0 +1,30 @@
+2016/11
+=======
+
+One phrase
+----------
+
+次に向けて屈伸姿勢
+
+
+Event
+-----
+
+- 年末年始向けメンテナンス
+
+
+memo
+----
+
+- php 7.1 になったことで設定変更の影響出た session.hash_bits_per_character
+- インフラ構築の自動化に半ば失敗
+- 既存のスロークエリ調査
+- AWS アカウントを全てコンソリ変更
+
+
+Focus
+-----
+
+- AWS CloudFormation
+- AWS CLI
+- AWS VPC ピアリング。構想失敗

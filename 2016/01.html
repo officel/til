@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>AWS &mdash; TIL  documentation</title>
+  <title>2016/01 &mdash; TIL  documentation</title>
   
 
   
@@ -34,8 +34,9 @@
               href="../genindex.html"/>
         <link rel="search" title="検索" href="../search.html"/>
     <link rel="top" title="TIL  documentation" href="../index.html"/>
-        <link rel="next" title="Sphinx" href="../sphinx/index.html"/>
-        <link rel="prev" title="2016/12" href="../2016/12.html"/> 
+        <link rel="up" title="2016" href="index.html"/>
+        <link rel="next" title="2016/02" href="02.html"/>
+        <link rel="prev" title="2016" href="index.html"/> 
 
   
   <script src="../_static/js/modernizr.min.js"></script>
@@ -82,10 +83,22 @@
             
                 <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../2016/index.html">2016</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">AWS</a><ul class="simple">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">2016</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">2016/01</a></li>
+<li class="toctree-l2"><a class="reference internal" href="02.html">2016/02</a></li>
+<li class="toctree-l2"><a class="reference internal" href="03.html">2016/03</a></li>
+<li class="toctree-l2"><a class="reference internal" href="04.html">2016/04</a></li>
+<li class="toctree-l2"><a class="reference internal" href="05.html">2016/05</a></li>
+<li class="toctree-l2"><a class="reference internal" href="06.html">2016/06</a></li>
+<li class="toctree-l2"><a class="reference internal" href="07.html">2016/07</a></li>
+<li class="toctree-l2"><a class="reference internal" href="08.html">2016/08</a></li>
+<li class="toctree-l2"><a class="reference internal" href="09.html">2016/09</a></li>
+<li class="toctree-l2"><a class="reference internal" href="10.html">2016/10</a></li>
+<li class="toctree-l2"><a class="reference internal" href="11.html">2016/11</a></li>
+<li class="toctree-l2"><a class="reference internal" href="12.html">2016/12</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../aws/index.html">AWS</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../sphinx/index.html">Sphinx</a></li>
 </ul>
 
@@ -117,11 +130,13 @@
   <ul class="wy-breadcrumbs">
     <li><a href="../index.html">Docs</a> &raquo;</li>
       
-    <li>AWS</li>
+          <li><a href="index.html">2016</a> &raquo;</li>
+      
+    <li>2016/01</li>
       <li class="wy-breadcrumbs-aside">
         
           
-            <a href="../_sources/aws/index.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/2016/01.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -131,10 +146,52 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="aws">
-<h1>AWS<a class="headerlink" href="#aws" title="Permalink to this headline">¶</a></h1>
-<p>好きなAWSサービスはACMです。</p>
-<div class="toctree-wrapper compound">
+  <div class="section" id="id1">
+<h1>2016/01<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="one-phrase">
+<h2>One phrase<a class="headerlink" href="#one-phrase" title="Permalink to this headline">¶</a></h2>
+<p>Terraform VS Ansible on AWS</p>
+</div>
+<div class="section" id="event">
+<h2>Event<a class="headerlink" href="#event" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>年末年始を跨いでデプロイがなかったタイトルについて外部の認証期限切れが発生<ul>
+<li>２週間もデプロイしないとは思わなかったので</li>
+</ul>
+</li>
+<li>redis の bgsave で GvG 性能低下<ul>
+<li>時間変更で対応</li>
+</ul>
+</li>
+<li>[J] redis がフェイルオーバー。<ul>
+<li>redis機の overcommit 設定を 1 にしていなかったのが理由</li>
+<li>マニュアルにも書いてあることが抜けていた</li>
+</ul>
+</li>
+<li>娘に合わせて日商簿記３級を再受験（合格した）</li>
+</ul>
+</div>
+<div class="section" id="memo">
+<h2>memo<a class="headerlink" href="#memo" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>AWS準備に terraform を検討Ansible との棲み分け</li>
+<li>[Z] の TCP timeout が多い件</li>
+<li>新規タイトル（[NEW]）の開発環境構築</li>
+<li>長期運用タイトル（[G]）のコスト削減開始＆NIC故障多発</li>
+<li>[O]/[Z]の運用移管開始（Ｃ社）</li>
+<li>ローカルVagrantのVMを作り直したせいでAnsibleがバージョンアップしてしまった</li>
+<li>コンフルとJIRA採用の流れ</li>
+</ul>
+</div>
+<div class="section" id="focus">
+<h2>Focus<a class="headerlink" href="#focus" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>AWS Lambda</li>
+<li>AWS AmazonLinux での環境構築 PHP7, ImageMagic等々</li>
+<li>AWS CloudFront</li>
+<li>AWS CloudTrail</li>
+<li>AWS IAM クロスアカウントアクセス</li>
+</ul>
 </div>
 </div>
 
@@ -145,10 +202,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../sphinx/index.html" class="btn btn-neutral float-right" title="Sphinx" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="02.html" class="btn btn-neutral float-right" title="2016/02" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="../2016/12.html" class="btn btn-neutral" title="2016/12" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="index.html" class="btn btn-neutral" title="2016" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
