@@ -1,20 +1,17 @@
 Office L TIL(Today I Learned)
 =============================
 
-Sphinx に再入門中。
+毎日学んだことのメモを Markdown で残しています。
 
-ソースコードは github 上の [officel/til: Today I learned](https://github.com/officel/til)
+そのソースコードは github 上の `officel/til <https://github.com/officel/til/>`_ にあります。
+
+このページはそれらを整理したものです。主に週次、月次、年次の振り返り用途です。
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
+   :titlesonly:
 
+   2016/index
    aws/index
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+   sphinx/index

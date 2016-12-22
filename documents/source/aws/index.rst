@@ -1,8 +1,7 @@
 AWS
 ===
 
-練習
+好きなAWSサービスはACMです。
+
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Contents:
